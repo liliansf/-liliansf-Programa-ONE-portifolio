@@ -1,0 +1,31 @@
+/* utilidades */
+@import "tipografia.css";
+ 
+@import "componentes.css";
+
+/* global */
+@import "global.css";
+@import "header.css";
+@import "footer.css";
+
+/* introducao */
+@import "introducao.css";
+
+/* sobre */
+@import "sobre.css";
+
+/* skills */
+@import "skills.css";
+@import "projetos.css";
+
+/* skills */
+@import "formacao.css";
+
+/* projetos */
+@import "projetos.css";
+
+/* contato */
+@import "contato.css";
+@import "formulario.css";
+
+/* plugins */

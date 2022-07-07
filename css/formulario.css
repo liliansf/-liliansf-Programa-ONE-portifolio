@@ -1,0 +1,80 @@
+.formulario div {
+  position: relative;
+  width: 100%;
+}
+
+.formulario div textarea,
+.formulario div input {
+  resize: vertical;
+  outline: none;
+  box-sizing: border-box;
+  width: 100%;
+  border-radius: 4px;
+}
+
+.formulario div input {
+  height: 56px;
+  padding: 10px 10px;
+  padding-bottom: 0px;
+}
+
+.formulario div label {
+  position: absolute;
+  left: 10px;
+  top: 25%;
+  transition: 300ms;
+}
+
+.formulario div.textarea label {
+  top: 15px;
+}
+
+.formulario div textarea {
+  height: 130px;
+  padding: 16px 10px;
+}
+
+.formulario div input:focus ~ label,
+.formulario div textarea:focus ~ label,
+.formulario div textarea:valid ~ label,
+.formulario div input:valid ~ label {
+  font-size: 12px;
+  color: #464646;
+  top: 5px;
+}
+
+.formulario div input:focus,
+.formulario div textarea:focus {
+  border-bottom: 3px solid #464646;;
+}
+
+.formulario .warning {
+  display: none;
+  margin-top: 5px;
+}
+
+.input-container--invalido {
+  margin-bottom: 0.5rem;
+}
+
+.input-container--invalido input {
+  border: 2px solid var(--cor-erro);
+  border-radius: 5px;
+}
+
+.input-container--invalido label {
+  color: var(--cor-erro);
+}
+
+.input-mensagem-erro {
+  display: none;
+}
+.input-container--invalido .input-mensagem-erro {
+  color: var(--cor-erro);
+  display: block;
+  margin-top: 0.5rem;
+  padding-left: 0.5rem;
+}
+
+@media (max-width: 1200px) {
+}

@@ -1,0 +1,53 @@
+.container {
+  max-width: 1200px;
+  padding: 0 20px;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+/* botão */
+button.botao {
+  border: none;
+}
+.botao {
+  color: #000;
+  background: var(--cor-p);
+  padding: 16px 30px;
+  transition: all 0.3s ease;
+}
+
+.botao:hover {
+  cursor: pointer;
+  background: #12446d;
+  color: white;
+  font-weight: 500;
+}
+
+.botao.secundario {
+  color: #FFFFFF;
+  background: #2A7AE4;
+  border: 1px solid var(--cor-p);
+  transition: all 0.3s ease;
+}
+
+.botao.secundario:hover {
+  color: #2A7AE4;
+  font-weight: 500;
+  background:#FFFFFF;
+}
+
+@media (max-width: 320px) {
+  .botao {
+    padding: 8px 16px;
+  }
+}
+
+/* efeito na foto */
+.div_pop img {
+  border-radius: 50%;
+  animation: in 0.5s forwards;
+}
+.div_pop img:hover {
+  transform: scale(1.1);
+  box-shadow: -8px 8px 0px var(--cor-p);
+}
